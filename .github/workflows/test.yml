@@ -1,13 +1,14 @@
 name: "build-and-test"
 
-on:
-  pull_request:
-    branches:
-      - main
-  push:
-    branches:
-      - main
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     branches:
+#       - main
+#   push:
+#     branches:
+#       - main
+# 
 permissions: {}
 
 jobs:

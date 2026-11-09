@@ -1,15 +1,16 @@
 name: "Code Scanning - Action"
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-  schedule:
-    - cron: '0 17 * * 5'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     branches:
+#       - main
+#   schedule:
+#     - cron: '0 17 * * 5'
+# 
 jobs:
   codeQL:
     runs-on: ubuntu-latest
